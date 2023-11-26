@@ -1,0 +1,7 @@
+(function () {
+window.addEventListener("message", (ev) => {
+  if (ev.data?.isUserWay && ev.data?.action === "close") {
+    document.activeElement?.blur();
+  }
+});
+})()
